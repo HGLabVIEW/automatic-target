@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/application_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bar_bg" >
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/common_title_back_selector"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/tiltle_button_selector"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/cancel"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/tab_text_size"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/auto_wifi_title_add_device"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/addCameraContainer"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="38dp" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/imgStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/auto_wifi_cicle_bg" />
+
+                <ImageView
+                    android:id="@+id/imgAnimation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/auto_wifi_wait" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="@string/auto_wifi_connecting_msg1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/large_text_size" />
+
+            <Button
+                android:id="@+id/btnAddCameraSuccess"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_auto_blue_selector"
+                android:text="@string/added_camera_success_txt"
+                android:textColor="@color/auto_wifi_blue"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnRetry"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_auto_blue_selector"
+                android:text="@string/retry"
+                android:textColor="@color/auto_wifi_blue"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnLineConnet"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_auto_red_selector"
+                android:text="@string/auto_wifi_line_connect"
+                android:textColor="@color/auto_wifi_red"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tvDeviceWifiConfigTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/wifi_connection_finish_need_refresh"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_size" />
+
+        <Button
+            android:id="@+id/btnFinish"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="38dp"
+            android:layout_marginRight="38dp"
+            android:background="@drawable/login_btn_selector"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/complete_txt"
+            android:textColor="@color/white"
+            android:textSize="@dimen/login_text_size"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineConnectContainer"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="38dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/imgLineConnectGuid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:src="@drawable/wifi_connect_tip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/auto_wifi_line_msg"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_size" />
+
+        <Button
+            android:id="@+id/btnLineConnetOk"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_auto_red_selector"
+            android:text="@string/auto_wifi_line_connected"
+            android:textColor="@color/auto_wifi_red" />
+    </LinearLayout>
+
+</LinearLayout>

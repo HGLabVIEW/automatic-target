@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/application_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/serial_no_add_title_ryt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bar_bg" >
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/common_title_back_selector"
+            android:onClick="onClick" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/auto_wifi_cer_config_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tipTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/auto_wifi_config_tip"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/large_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/inputlayout_bg"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_wifi_net"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_text_size" />
+
+            <TextView
+                android:id="@+id/tvSSID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:hint="@string/auto_wifi_ssid"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/inputlayout_bg"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_password_tv_txt"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_text_size" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:inputType="text"
+                android:maxLength="64"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_text_size" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_btn_selector"
+            android:text="@string/next_button_txt"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tab_text_size" />
+
+        <TextView
+            android:id="@+id/tipBotton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/if_your_device_has_been_used"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/content_text_size" />
+
+        <TextView
+            android:id="@+id/tvReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/how_to_reset"
+            android:textColor="@color/auto_blue_text"
+            android:textSize="@dimen/content_text_size" />
+    </LinearLayout>
+
+</LinearLayout>
