@@ -7,7 +7,6 @@
     进行圆心跟箭的检测
     环数确定算法的实现设计
 ![](https://github.com/495285586/automatic-target/blob/master/pic/%E5%9B%BE%E7%89%872.png?raw=true)
-    ![](https://github.com/495285586/automatic-target/blob/master/pic/%E5%9B%BE%E7%89%872.png?raw=true)
     ![](https://github.com/495285586/automatic-target/blob/master/pic/%E5%9B%BE%E7%89%873.png?raw=true)
     ![](https://github.com/495285586/automatic-target/blob/master/pic/%E5%9B%BE%E7%89%877.png?raw=true)
     ![](https://github.com/495285586/automatic-target/blob/master/pic/%E5%9B%BE%E7%89%878.png?raw=true)
